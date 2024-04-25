@@ -7,71 +7,162 @@
     <!-- Iphone 모바일 확대 방지  maximum-scale=1.0, user-scalable=0-->
     <title>디어마이히어로</title> 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/style.js"></script>
     <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
-    <header>
-        <h1>DEAR MY HERO</h1>
-        <div>
-            <a href="">Google Play</a>
-            <a href="">App Store</a>
+    <header class="contentSize">
+        <h1 class="imgBox">DEAR MY HERO</h1>
+        <div data-styleIdx>
+            <a href="" class="imgBox">Google Play</a>
+            <a href="" class="imgBox">App Store</a>
         </div>
     </header>
     
-    <div>
-        
+    <div class="topArea contentSize">
+        <div class="swiper topSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slide01">
+                    <p>고민되던 부모님, 은사님 선물</p>
+                    <strong>
+                        디어 마이 히어로에<br/>
+                        오신 것을 환영합니다.
+                    </strong>
+                    <div data-styleIdx>
+                        <a href="" class="imgBox">Google Play</a>
+                        <a href="" class="imgBox">App Store</a>
+                    </div>
+                </div>
+                <div class="swiper-slide slide02">
+                    <p>고민되던 부모님, 은사님 선물</p>
+                    <strong>
+                        디어 마이 히어로에서<br/>
+                        해결해 드릴게요.
+                    </strong>
+                    <div data-styleIdx>
+                        <a href="" class="imgBox">Google Play</a>
+                        <a href="" class="imgBox">App Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
     </div>
 
-    <section>
-        <h2></h2>
-        <p></p>
+    <section class="serviceArea contentSize">
+        <h2>서비스 안내</h2>
+        <p>DEAR MY HERO에서 부모님, 은사님께 특별한 선물을 해보세요.</p>
+        <div class="swiper serviceSwiper">
+            <div class="swiper-wrapper" data-styleIdx>
+                <div class="swiper-slide slide01">
+                    <strong>
+                        어떤 선물을<br>
+                        해야하나 걱정이었다면<br>
+                        이젠 고민 뚝!
+                    </strong>
+                    <p>
+                        실버 특화 상품들로 큐레이션하여<br>
+                        고민을 덜어드림은 물론<br>
+                        단독특가, 타임딜로 특별한 가격까지
+                    </p>
+                </div>
+                <div class="swiper-slide slide02">
+                    <strong>
+                        나눠서<br>
+                        선물할 수 있도록<br>
+                        분할 결제 지원!
+                    </strong>
+                    <p>
+                        금액대가 큰 금액도 OK! 가족들, 친구들과<br>
+                        돈 모으느라 고생할 필요 없이<br>
+                        나눠서 결제를 할 수 있어요!
+                    </p>
+                </div>
+                <div class="swiper-slide slide03">
+                    <strong>
+                        영상메시지를<br>
+                        선물과 함께!<br>
+                        선물을 보다 특별하게
+                    </strong>
+                    <p>
+                        돈 모아서 선물만 딱 보내기, 너무 정 없잖아요?<br>
+                        선물 배송일정에 맞춰서<br>
+                        영상 메시지를 함께 보낼 수 있어요!
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </section>
 
-    <section>
-        <h2></h2>
-    </section>
-
-    <div>
-        <strong></strong>
-        <a href=""></a>
-        <a href=""></a>
-    </div>
-
-    <footer>
-        <h2></h2>
+    <section class="questionArea contentSize">
+        <h2>자주 묻는 질문</h2>
         <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li>
+                <button data-open>디어 마이 히어로는 어떤 서비스인가요?</button>
+                <div>
+                    디어 마이 히어로는 우리 부모님, 은사님 세대에 딱 맞는 상품들을 큐레이션하는 서비스입니다.
+                    어른들 선물용 상품은 사실 가격대부터 상품 퀄리티까지 어느 것 하나 신경쓰지 않을 수 있는 것이 없는데
+                    일반 쇼핑몰이나 메신저의 판매 서비스는 젊은 사람 취향인 제품들이나 보증되지 않은 퀄리티가 많기에 모두가 안심하고 살 수 있도록 만들어졌습니다.
+                </div>
+                <button data-close class="imgBox">닫기</button>
+            </li>
+            <li>
+                <button data-open>어떤 상품들이 큐레이션 되나요?</button>
+                <div>
+                    
+                </div>
+                <button data-close class="imgBox">닫기</button>
+            </li>
+        </ul>
+    </section>
+
+    <div class="linkArea contentSize">
+        <strong>
+            디어 마이 히어로에서<br>
+            특별한 선물들을 만나보세요!
+        </strong>
+        <div data-styleIdx>
+            <a href="" class="imgBox">Google Play</a>
+            <a href="" class="imgBox">App Store</a>
+        </div>
+    </div>
+
+    <footer class="contentSize">
+        <h2 class="imgBox">DEAR MY HERO</h2>
+        <ul>
+            <li><a href="">서비스 이용약관</a></li>
+            <li><a href="">개인정보 보호정책</a></li>
         </ul>
         <address>
             <dl>
-                <dt></dt>
-                <dd></dd>
+                <dt>대표명</dt>
+                <dd>홍길동</dd>
             </dl>
             <dl>
-                <dt></dt>
-                <dd></dd>
+                <dt>사업자 등록번호</dt>
+                <dd>0000-0000-00000</dd>
             </dl>
             <dl>
-                <dt></dt>
-                <dd></dd>
+                <dt>대표 전화</dt>
+                <dd>000-000-0000</dd>
             </dl>
             <dl>
-                <dt></dt>
-                <dd></dd>
+                <dt>팩스</dt>
+                <dd>000-000-0000</dd>
             </dl>
-            <p></p>
-            <a href=""></a>
+            <p>주소 경기도 성남시 분당구 경기도 성남시 분당구 경기도 성남시 분당구</p>
+            <a href="">http://www.ad-hero.co.kr</a>
             <div>
                 <dl>
-                    <dt></dt>
-                    <dd><a href=""></a></dd>
+                    <dt>고객센터</dt>
+                    <dd><a href="">1588-1588</a></dd>
                 </dl>
-                <p></p>
+                <p>평일 10:00 - 19:00 (점심시간 12:00 - 13:00, 주말 및 공휴일 휴무)</p>
             </div>
         </address>
-
     </footer>
 </body>
 </html>

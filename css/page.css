@@ -1,54 +1,45 @@
 
 /* 상단 */
-.topArea{padding-top: 100px; background: url(../images/bg-top.png) no-repeat center / cover; position: relative;}
-.topArea .swiper-slide{padding-block: 240px 276px; position: relative; color: white;}
-.topArea .swiper-slide p{font-size: 30px; line-height: 40px; margin-bottom: 30px; font-weight: 400;}
-.topArea .swiper-slide strong{font-size: 60px; line-height: 72px; margin-bottom: 60px; font-weight: 700; display: block;}
-.topArea .swiper-slide div{display: flex; gap: 28px;}
-.topArea .swiper-slide div a{width: 242px; aspect-ratio: 242 / 70; background-image: url(../images/icon-appLogo.png);}
-.topArea .swiper-slide::after{content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%); background-position: center; background-size: cover;}
-.topArea .swiper-slide.slide01::after{width: 300px; aspect-ratio: 300 / 580; background-image: url(../images/img-top01.png);}
-.topArea .swiper-slide.slide02::after{width: 526px; aspect-ratio: 526 / 640; background-image: url(../images/img-top02.png);}
-.topArea .swiper-pagination{left: 40px; bottom: 40px; width: auto;}
-.topArea .swiper-pagination span{display: block;}
-.topArea .swiper-pagination span:not(:last-child){margin-bottom: 21px;}
-.topArea .swiper-pagination .swiper-pagination-bullet{margin-inline: auto;}
-.swiper-pagination .swiper-pagination-bullet{width: 9px; height: 9px; background-color: #999;}
-.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{background-color: transparent; border: 3px solid #FA4041;}
+.topArea{background: url(../images/bg-top.png) no-repeat center / cover; position: relative;}
+.topArea .swiper-slide{position: relative; color: white;}
+.topArea .swiper-slide p{font-weight: 400;}
+.topArea .swiper-slide strong{font-weight: 700; display: block;}
+.topArea .swiper-slide div{display: flex;}
+.topArea .swiper-slide::after{content: ''; background-position: center; background-size: cover;}
+.topArea .swiper-slide.slide01::after{aspect-ratio: 300 / 580; background-image: url(../images/img-top01.png);}
+.topArea .swiper-slide.slide02::after{aspect-ratio: 526 / 640; background-image: url(../images/img-top02.png);}
+.topArea .swiper-pagination .swiper-pagination-bullet{margin-inline: 0;}
 
-section h2{font-size: 50px; line-height: 60px; font-weight: 700; text-align: center;}
+
+section h2{font-weight: 700; text-align: center;}
 /* 서비스 */
-.serviceArea{padding-block: 150px;}
-.serviceArea h2{margin-bottom: 20px;}
-.serviceArea > p{margin-bottom: 147px; text-align: center;}
-.serviceArea .serviceSwiper .swiper-slide{padding-block: 63px 165px; position: relative;}
-.serviceArea .serviceSwiper .swiper-slide strong{font-size: 40px; line-height: 50px; margin-bottom: 30px; font-weight: 700; display: block;}
-.serviceArea .serviceSwiper .swiper-slide p{font-size: 22px; line-height: 34px; font-weight: 400; color: #666;}
-.serviceArea .serviceSwiper .swiper-slide::after{width: 610px; aspect-ratio: 610 / 510; content: ''; position: absolute; right: 0; top: 0; background: url(../images/img-service.png) no-repeat left top calc(100% / (var(--idxTotal) - 1) * var(--styleIdx)) / 100%;}
+.serviceArea > p{text-align: center;}
+.serviceArea .serviceSwiper .swiper-slide{position: relative;}
+.serviceArea .serviceSwiper .swiper-slide strong{font-weight: 700; display: block;}
+.serviceArea .serviceSwiper .swiper-slide p{font-weight: 400; color: #666;}
+.serviceArea .serviceSwiper .swiper-slide::after{aspect-ratio: 610 / 510; content: ''; background: url(../images/img-service.png) no-repeat left top calc(100% / (var(--idxTotal) - 1) * var(--styleIdx)) / 100%;}
 .serviceArea .swiper-pagination .swiper-pagination-bullet{margin-inline: auto;}
-.serviceArea .serviceSwiper .swiper-pagination{top: 405px; gap: 20px; width: auto; bottom: auto; display: flex; align-items: center;}
+.serviceArea .serviceSwiper .swiper-pagination{width: auto; bottom: auto; display: flex; align-items: center;}
 
 
 /* 자주 묻는 질문 */
-.questionArea{padding-block: 120px 140px; background-color: #F8F8F8;}
-.questionArea h2{margin-bottom: 90px;}
+.questionArea{background-color: #F8F8F8;}
 .questionArea ul{border-top: 1px solid #bbb;}
 .questionArea ul li{border-bottom: 1px solid #bbb;}
-.questionArea ul li :is(button:nth-child(1), div){padding-inline: 30px;}
-.questionArea ul li button:nth-child(1){width: 100%; font-size: 22px; line-height: 30px; padding-block: 40px; font-weight: 700; text-align: left;}
-.questionArea ul li div{display: none; font-size: 18px; line-height: 26px; font-weight: 400;}
-.questionArea ul li:not(.active) button:nth-child(1){background: url(../images/icon-open.png) no-repeat center right 20px / 42px;}
+.questionArea ul li button:nth-child(1){width: 100%; font-weight: 700; text-align: left;}
+.questionArea ul li div{display: none; font-weight: 400;}
+.questionArea ul li:not(.active) button:nth-child(1){background-position: center right var(--right); background-image: url(../images/icon-open.png); background-repeat: no-repeat;}
 .questionArea ul li:not(.active) button:nth-of-type(2){display: none;}
 .questionArea ul li.active{padding-bottom: 40px; position: relative;}
-.questionArea ul li.active button:nth-child(1){padding-bottom: 34px; cursor: auto;}
+.questionArea ul li.active button:nth-child(1){width: 100%; padding-bottom: 34px; cursor: auto;}
 .questionArea ul li.active div{display: block;}
-.questionArea ul li.active button:nth-of-type(2){position: absolute; width: 42px; aspect-ratio: 1; right: 20px; top: 34px; background-image: url(../images/icon-close.png);}
+.questionArea ul li.active button:nth-of-type(2){position: absolute; aspect-ratio: 1; background-image: url(../images/icon-close.png);}
 
 
 
 /* 링크 */
-.linkArea{padding-top: 90px; background: url(../images/bg-footer.png) no-repeat center / cover;}
-.linkArea strong{font-size: 40px; line-height: 50px; margin-bottom: 60px; color: white; text-align: center; font-weight: 700; display: block;}
+.linkArea{background-repeat: no-repeat; background-position: center; background-size: cover;}
+.linkArea strong{color: white; text-align: center; font-weight: 700; display: block;}
 .linkArea div{display: flex; justify-content: center; gap: 28px;}
-.linkArea div a{width: 242px; aspect-ratio: 242 / 70; background-image: url(../images/icon-appLogo.png);}
-.linkArea::after{content: ''; display: block; height: 1px; background-color: #404040; margin-top: 100px;}
+.linkArea div a{aspect-ratio: 242 / 70; background-image: url(../images/icon-appLogo.png);}
+.linkArea::after{content: ''; display: block; height: 1px; background-color: #404040;}

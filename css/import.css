@@ -3,4 +3,8 @@
 
 @import url('reset.css');
 @import url('global.css');
+@import url('global1920.css') screen and (1000px <= width);
+@import url('global360.css') screen and (width < 1000px);
 @import url('page.css');
+@import url('page1920.css') screen and (1000px <= width);
+@import url('page360.css') screen and (width < 1000px);

@@ -1,11 +1,10 @@
 :root{
-    --contentHalf: calc((100% - 1200px) / 2);
+    --contentHalf: max(calc((100% - 1200px) / 2), 20px);
 }
 
 
 /* 컨텐츠 사이즈 */
-.contentSize{padding-inline: var(--contentHalf); box-sizing: border-box;}
-.contentHalf{}
+.contentSize{padding-inline: max(var(--contentHalf), 20px); box-sizing: border-box;}
 
 
 /* 이미지 박스 */
@@ -13,23 +12,26 @@
 [data-styleIdx] .imgBox{background-position: left top calc(100% / (var(--idxTotal) - 1) * var(--styleIdx));}
 
 
+/* 페이저 */
+.swiper-pagination .swiper-pagination-bullet{background-color: #999;}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{background-color: transparent; border: 3px solid #FA4041;}
+
+
 /* 해더 */
-header{background-color: black; height: 100px; display: flex; justify-content: space-between; align-items: center; position: fixed; left: 0; top: 0; width: 100%; z-index: 100;}
+header{height: 100px; display: flex; justify-content: space-between; align-items: center; position: fixed; left: 0; top: 0; width: 100%; z-index: 100;}
 header h1{width: 222px; aspect-ratio: 222 / 24; background-image: url(../images/logo.png);}
 header div{display: flex; gap: 20px;}
 header div a{width: 50px; aspect-ratio: 1; background-image: url(../images/icon-app.png);}
 
 
 /* 푸터 */
-footer{--paddingTop: 90px; padding-block: var(--paddingTop) 100px; color: #999; background-color: #111; position: relative;}
-footer h2{max-width: 222px; margin-bottom: 58px; aspect-ratio: 222 / 24; background-image: url(../images/logo-footer.png);}
-footer ul{margin-bottom: 30px; display: flex;}
+footer{color: #999; background-color: #111; position: relative;}
+footer h2{aspect-ratio: 222 / 24; background-image: url(../images/logo-footer.png);}
+footer ul{display: flex;}
 footer ul li:not(:last-child){display: flex; align-items: center;}
-footer ul li:not(:last-child)::after{margin-inline: 15px; content: ''; width: 1px; height: 15px; background-color: rgba(255, 255, 255, 0.3);}
-footer ul li{font-size: 18px; line-height: 21px; font-weight: 700;}
-footer address{font-size: 18px; line-height: 32px; font-weight: 400;}
+footer ul li:not(:last-child)::after{content: ''; width: 1px; background-color: rgba(255, 255, 255, 0.3);}
+footer ul li{font-weight: 700;}
+footer address{font-weight: 400;}
 footer address dl{display: flex; align-items: center;}
 footer address > dl{gap: 0.4em;}
-footer address div{position: absolute; right: var(--contentHalf); top: var(--paddingTop); text-align: right;}
-footer address div dl{margin-bottom: 12px; justify-content: flex-end; font-weight: 700;}
-footer address div dl dd{margin-left: 10px; font-size: 26px;}
+footer address div dl{font-weight: 700;}

@@ -1,35 +1,27 @@
-:root{
-    --contentHalf: calc((100% - 1200px) / 2);
-}
-
 
 /* 컨텐츠 사이즈 */
-.contentSize{padding-inline: var(--contentHalf); box-sizing: border-box;}
-.contentHalf{}
 
 
 /* 이미지 박스 */
-.imgBox{background-position: center; background-size: cover; text-indent: -9999px;}
-[data-styleIdx] .imgBox{background-position: left top calc(100% / (var(--idxTotal) - 1) * var(--styleIdx));}
+
+
+/* 페이저 */
+.swiper-pagination .swiper-pagination-bullet{width: 8px; height: 8px;}
 
 
 /* 해더 */
-header{background-color: black; height: 100px; display: flex; justify-content: space-between; align-items: center; position: fixed; left: 0; top: 0; width: 100%; z-index: 100;}
-header h1{width: 222px; aspect-ratio: 222 / 24; background-image: url(../images/logo.png);}
-header div{display: flex; gap: 20px;}
-header div a{width: 50px; aspect-ratio: 1; background-image: url(../images/icon-app.png);}
+header{height: 58px;}
+header div{display: none;}
+
 
 
 /* 푸터 */
-footer{--paddingTop: 90px; padding-block: var(--paddingTop) 100px; color: #999; background-color: #111; position: relative;}
-footer h2{max-width: 222px; margin-bottom: 58px; aspect-ratio: 222 / 24; background-image: url(../images/logo-footer.png);}
-footer ul{margin-bottom: 30px; display: flex;}
-footer ul li:not(:last-child){display: flex; align-items: center;}
-footer ul li:not(:last-child)::after{margin-inline: 15px; content: ''; width: 1px; height: 15px; background-color: rgba(255, 255, 255, 0.3);}
-footer ul li{font-size: 18px; line-height: 21px; font-weight: 700;}
-footer address{font-size: 18px; line-height: 32px; font-weight: 400;}
-footer address dl{display: flex; align-items: center;}
-footer address > dl{gap: 0.4em;}
-footer address div{position: absolute; right: var(--contentHalf); top: var(--paddingTop); text-align: right;}
-footer address div dl{margin-bottom: 12px; justify-content: flex-end; font-weight: 700;}
-footer address div dl dd{margin-left: 10px; font-size: 26px;}
+footer{padding-block: 40px 104px;}
+footer h2{max-width: 140px; margin-bottom: 30px;}
+footer ul{margin-bottom: 20px;}
+footer ul li:not(:last-child)::after{margin-inline: 12px; height: 13px;}
+footer ul li{font-size: 12px; line-height: 14px;}
+footer address{font-size: 12px; line-height: 18px;}
+footer address div{margin-top: 20px;}
+footer address div dl{font-size: 15px; margin-bottom: 7px;}
+footer address div dl dd{margin-left: 0.4em;} 

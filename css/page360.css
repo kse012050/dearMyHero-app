@@ -1,0 +1,41 @@
+
+/* 상단 */
+.topArea{padding-top: 58px;}
+.topArea .swiper-slide{padding-block: 60px 68px;}
+.topArea .swiper-slide p{font-size: 18px; line-height: 24px; margin-bottom: 20px;}
+.topArea .swiper-slide strong{font-size: 36px; line-height: 43px; margin-bottom: 30px;}
+.topArea .swiper-slide div{gap: 15px;}
+.topArea .swiper-slide div a{width: 60px; aspect-ratio: 1; background-image: url(../images/icon-app.png);}
+.topArea .swiper-slide::after{display: block; margin-inline: auto;}
+.topArea .swiper-slide.slide01::after{max-width: 170px;}
+.topArea .swiper-slide.slide02::after{max-width: 260px;}
+.topArea .swiper-pagination{gap: 15px; bottom: 40px; display: flex; justify-content: center; align-items: center;}
+
+
+section h2{font-size: 26px; line-height: 31px;}
+/* 서비스 */
+.serviceArea{padding-block: 80px;}
+.serviceArea h2{margin-bottom: 15px;}
+.serviceArea > p{font-size: 20px; line-height: 28px; margin-bottom: 60px;}
+.serviceArea .serviceSwiper .swiper-slide strong{font-size: 20px; line-height: 26px; margin-bottom: 20px;}
+.serviceArea .serviceSwiper .swiper-slide p{font-size: 15px; line-height: 22px; margin-bottom: 78px;}
+.serviceArea .serviceSwiper .swiper-slide::after{max-width: 320px; display: block;}
+.serviceArea .serviceSwiper .swiper-pagination{top: 194px; gap: 15px;}
+
+
+/* 자주 묻는 질문 */
+.questionArea{padding-block: 80px;}
+.questionArea h2{margin-bottom: 60px;}
+.questionArea ul li :is(button:nth-child(1), div){padding-inline: 10px;}
+.questionArea ul li button:nth-child(1){font-size: 15px; line-height: 22px; padding-block: 30px;}
+.questionArea ul li div{font-size: 15px; line-height: 22px;}
+.questionArea ul li:not(.active) button:nth-child(1){--right: 10px; background-size: 30px;}
+.questionArea ul li.active button:nth-of-type(2){width: 30px; right: 10px; top: 26px;}
+
+
+
+/* 링크 */
+.linkArea{padding-top: 80px; background-color: #111; background-image: url(../images/bg-footer-m.png); background-size: 360px;}
+.linkArea strong{font-size: 26px; line-height: 31px; margin-bottom: 35px;}
+.linkArea div a{width: 150px;}
+.linkArea::after{margin-top: 94px;}

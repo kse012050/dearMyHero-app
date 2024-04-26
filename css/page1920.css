@@ -1,0 +1,44 @@
+
+/* 상단 */
+.topArea{padding-top: 100px;}
+.topArea .swiper-slide{padding-block: 240px 276px;}
+.topArea .swiper-slide p{font-size: 30px; line-height: 40px; margin-bottom: 30px;}
+.topArea .swiper-slide strong{font-size: 60px; line-height: 72px; margin-bottom: 60px;}
+.topArea .swiper-slide div{gap: 28px;}
+.topArea .swiper-slide div a{width: 242px; aspect-ratio: 242 / 70; background-image: url(../images/icon-appLogo.png);}
+.topArea .swiper-slide::after{position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+.topArea .swiper-slide.slide01::after{width: 300px;}
+.topArea .swiper-slide.slide02::after{width: 526px;}
+.topArea .swiper-pagination{left: 40px; bottom: 40px; width: auto;}
+.topArea .swiper-pagination span{display: block;}
+.topArea .swiper-pagination span:not(:last-child){margin-bottom: 21px;}
+
+
+section h2{font-size: 50px; line-height: 60px;}
+/* 서비스 */
+.serviceArea{padding-block: 150px;}
+.serviceArea h2{margin-bottom: 20px;}
+.serviceArea > p{font-size: 24px; line-height: 30px; margin-bottom: 147px;}
+.serviceArea .serviceSwiper .swiper-slide{padding-block: 63px 165px;}
+.serviceArea .serviceSwiper .swiper-slide strong{font-size: 40px; line-height: 50px; margin-bottom: 30px;}
+.serviceArea .serviceSwiper .swiper-slide p{font-size: 22px; line-height: 34px;}
+.serviceArea .serviceSwiper .swiper-slide::after{width: 610px; position: absolute; right: 0; top: 0;}
+.serviceArea .serviceSwiper .swiper-pagination{top: 405px; gap: 20px;}
+
+
+/* 자주 묻는 질문 */
+.questionArea{padding-block: 120px 140px;}
+.questionArea h2{margin-bottom: 90px;}
+.questionArea ul li :is(button:nth-child(1), div){padding-inline: 30px;}
+.questionArea ul li button:nth-child(1){font-size: 22px; line-height: 30px; padding-block: 40px;}
+.questionArea ul li div{font-size: 18px; line-height: 26px;}
+.questionArea ul li:not(.active) button:nth-child(1){--right: 20px; background-size: 42px;}
+.questionArea ul li.active button:nth-of-type(2){width: 42px; right: 20px; top: 34px;}
+
+
+
+/* 링크 */
+.linkArea{padding-top: 90px; background-image: url(../images/bg-footer.png);}
+.linkArea strong{font-size: 40px; line-height: 50px; margin-bottom: 60px;}
+.linkArea div a{width: 242px;}
+.linkArea::after{margin-top: 100px;}

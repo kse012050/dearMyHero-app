@@ -15,7 +15,10 @@ $(document).ready(function(){
         effect: "fade",
         fadeEffect: {
           crossFade: true
-        },
+        },/* 
+        autoplay: {
+            delay: 5000,
+        }, */
     });
 
     var serviceSwiper = new Swiper(".serviceSwiper", {
@@ -25,7 +28,10 @@ $(document).ready(function(){
         effect: "fade",
         fadeEffect: {
           crossFade: true
-        },
+        },/* 
+        autoplay: {
+            delay: 5000,
+        }, */
     });
 
     $('[data-open]').click(function(){
@@ -35,6 +41,24 @@ $(document).ready(function(){
     $('[data-close]').click(function(){
         $(this).parent().removeClass('active');
     })
+
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 0){
+            $('header').addClass('active');
+        }else{
+            $('header').removeClass('active');
+        }
+
+        if($(this).scrollTop() > $(window).innerHeight()){
+            $('footer button').addClass('active');
+        }else{
+            $('footer button').removeClass('active');
+        }
+    })
+    $('footer button').click(function(){
+        $('html').animate({scrollTop: 0})
+    })
+
 })
 
 // 기본 - 화면의 가로, 세로 크기 / 스크롤 존재가 있다면 스크롤 크기 없으면 0

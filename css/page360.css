@@ -4,13 +4,22 @@
 .topArea .swiper-slide{padding-block: 60px 68px;}
 .topArea .swiper-slide p{font-size: 18px; line-height: 24px; margin-bottom: 20px;}
 .topArea .swiper-slide strong{font-size: 36px; line-height: 43px; margin-bottom: 30px;}
-.topArea .swiper-slide div{gap: 15px;}
+.topArea .swiper-slide div{gap: 15px; margin-bottom: 60px;}
 .topArea .swiper-slide div a{width: 60px; aspect-ratio: 1; background-image: url(../images/icon-app.png);}
 .topArea .swiper-slide::after{display: block; margin-inline: auto;}
-.topArea .swiper-slide.slide01::after{max-width: 170px;}
-.topArea .swiper-slide.slide02::after{max-width: 260px;}
+.topArea .swiper-slide.slide01::after{width: clamp(170px, 30%, 250px);}
+.topArea .swiper-slide.slide02::after{width: 260px;}
 .topArea .swiper-pagination{gap: 15px; bottom: 40px; display: flex; justify-content: center; align-items: center;}
+.topArea .swiper-pagination .swiper-pagination-bullet{margin-inline: 0;}
 
+@media screen and (700px <= width) {
+    .topArea .swiper-slide{padding-block: 140px;}
+    .topArea .swiper-slide::after{position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+}
+
+@media screen and (width < 700px) {
+    
+}
 
 section h2{font-size: 26px; line-height: 31px;}
 /* 서비스 */
@@ -19,8 +28,20 @@ section h2{font-size: 26px; line-height: 31px;}
 .serviceArea > p{font-size: 20px; line-height: 28px; margin-bottom: 60px;}
 .serviceArea .serviceSwiper .swiper-slide strong{font-size: 20px; line-height: 26px; margin-bottom: 20px;}
 .serviceArea .serviceSwiper .swiper-slide p{font-size: 15px; line-height: 22px; margin-bottom: 78px;}
-.serviceArea .serviceSwiper .swiper-slide::after{max-width: 320px; display: block;}
-.serviceArea .serviceSwiper .swiper-pagination{top: 194px; gap: 15px;}
+.serviceArea .serviceSwiper .swiper-slide::after{display: block;}
+.serviceArea .serviceSwiper .swiper-pagination{gap: 15px;}
+
+@media screen and (700px <= width) {
+    .serviceArea .serviceSwiper .swiper-slide{padding-block: 50px;}
+    .serviceArea .serviceSwiper .swiper-slide::after{position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+    .serviceArea .serviceSwiper .swiper-slide::after{width: 400px;}
+    .serviceArea .serviceSwiper .swiper-pagination{top: 244px;}
+}
+
+@media screen and (width < 700px) {
+    .serviceArea .serviceSwiper .swiper-slide::after{width: 320px; margin-inline: auto;}
+    .serviceArea .serviceSwiper .swiper-pagination{top: 194px;}
+}
 
 
 /* 자주 묻는 질문 */

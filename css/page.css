@@ -8,7 +8,7 @@
 .topArea .swiper-slide::after{content: ''; background-position: center; background-size: cover;}
 .topArea .swiper-slide.slide01::after{aspect-ratio: 300 / 580; background-image: url(../images/img-top01.png);}
 .topArea .swiper-slide.slide02::after{aspect-ratio: 526 / 640; background-image: url(../images/img-top02.png);}
-.topArea .swiper-pagination .swiper-pagination-bullet{margin-inline: 0;}
+/* .swiper-pagination .swiper-pagination-bullet:not(.swiper-pagination-bullet-active){background-color: white;} */
 
 
 section h2{font-weight: 700; text-align: center;}
@@ -41,5 +41,5 @@ section h2{font-weight: 700; text-align: center;}
 .linkArea{background-repeat: no-repeat; background-position: center; background-size: cover;}
 .linkArea strong{color: white; text-align: center; font-weight: 700; display: block;}
 .linkArea div{display: flex; justify-content: center; gap: 28px;}
-.linkArea div a{aspect-ratio: 242 / 70; background-image: url(../images/icon-appLogo.png);}
+.linkArea div a{aspect-ratio: 242 / 70; background-image: url(../images/logo-app.png); border: 1px solid white; background-color: rgba(255, 255, 255, 0.05);}
 .linkArea::after{content: ''; display: block; height: 1px; background-color: #404040;}

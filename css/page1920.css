@@ -5,13 +5,14 @@
 .topArea .swiper-slide p{font-size: 30px; line-height: 40px; margin-bottom: 30px;}
 .topArea .swiper-slide strong{font-size: 60px; line-height: 72px; margin-bottom: 60px;}
 .topArea .swiper-slide div{gap: 28px;}
-.topArea .swiper-slide div a{width: 242px; aspect-ratio: 242 / 70; background-image: url(../images/icon-appLogo.png);}
+.topArea .swiper-slide div a{width: 242px; aspect-ratio: 242 / 70; border: 1px solid white; background-color: rgba(255, 255, 255, 0.2); background-image: url(../images/logo-app.png);}
 .topArea .swiper-slide::after{position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
-.topArea .swiper-slide.slide01::after{width: 300px;}
-.topArea .swiper-slide.slide02::after{width: 526px;}
+.topArea .swiper-slide.slide01::after{width: min(25%, 300px);}
+.topArea .swiper-slide.slide02::after{width: min(43.8333%, 526px);}
 .topArea .swiper-pagination{left: 40px; bottom: 40px; width: auto;}
 .topArea .swiper-pagination span{display: block;}
 .topArea .swiper-pagination span:not(:last-child){margin-bottom: 21px;}
+.topArea .swiper-pagination .swiper-pagination-bullet{margin-inline: auto;}
 
 
 section h2{font-size: 50px; line-height: 60px;}
@@ -22,7 +23,7 @@ section h2{font-size: 50px; line-height: 60px;}
 .serviceArea .serviceSwiper .swiper-slide{padding-block: 63px 165px;}
 .serviceArea .serviceSwiper .swiper-slide strong{font-size: 40px; line-height: 50px; margin-bottom: 30px;}
 .serviceArea .serviceSwiper .swiper-slide p{font-size: 22px; line-height: 34px;}
-.serviceArea .serviceSwiper .swiper-slide::after{width: 610px; position: absolute; right: 0; top: 0;}
+.serviceArea .serviceSwiper .swiper-slide::after{width: min(50.8333%, 610px); position: absolute; right: 0; top: 0;}
 .serviceArea .serviceSwiper .swiper-pagination{top: 405px; gap: 20px;}
 
 

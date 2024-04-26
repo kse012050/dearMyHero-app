@@ -11,13 +11,14 @@
 
 /* 해더 */
 header{height: 58px;}
+header h1{width: 130px; font-size: 10px;}
 header div{display: none;}
 
 
 
 /* 푸터 */
 footer{padding-block: 40px 104px;}
-footer h2{max-width: 140px; margin-bottom: 30px;}
+footer h2{aspect-ratio: 140 / 15; max-width: 140px; font-size: 10px; margin-bottom: 30px;}
 footer ul{margin-bottom: 20px;}
 footer ul li:not(:last-child)::after{margin-inline: 12px; height: 13px;}
 footer ul li{font-size: 12px; line-height: 14px;}
@@ -25,3 +26,4 @@ footer address{font-size: 12px; line-height: 18px;}
 footer address div{margin-top: 20px;}
 footer address div dl{font-size: 15px; margin-bottom: 7px;}
 footer address div dl dd{margin-left: 0.4em;} 
+footer button{width: 50px; right: 20px; bottom: 20px;}
